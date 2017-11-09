@@ -1,0 +1,21 @@
+<h1>Bhanu Super Sketchy Store</h1>
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+    <th>Image</th>
+  </tr>
+
+  <% @all_products.each do|prod|%>
+  <tr>
+   
+    <td><%= prod.name %></td>
+    <td><%= prod.price%></td>
+    <td><%= prod.description %></td>
+    <td> <img class="img-responsive" src=<%= prod.image %>></td>
+
+  </tr>
+  <% end %>
+</table>
